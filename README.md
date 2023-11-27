@@ -1,5 +1,7 @@
 # GieremExtencion
-Extencion de tweitch + redem
+Extencion de tweitch + redem    
+[![Imagen](https://i.ibb.co/SBBT4cG/image.png)](https://i.ibb.co/SBBT4cG/image.png)
+
 # Instalar la extención
 * 1 Descargar y descomprimir la extencion: [gieremExtencion.zip](https://github.com/nandordena/GieremExtencion/blob/main/gieremExtencion.zip)
 * 2 Abir el administrador de extenciones: [chrome://extensions/](chrome://extensions/)
