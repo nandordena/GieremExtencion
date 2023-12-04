@@ -1,3 +1,4 @@
+
 function autoRedem() {
 	//autoredem
 	setInterval(()=>{
@@ -28,11 +29,34 @@ function alexNarcicismo(){
 	`;
 	document.body.appendChild(s);
 }
+function chatListener(){
+	try {
+		chatLine = document.querySelector(".chat-line__message:last-child");
+		if(chatLine.dataset.aUser != "gierem_17") return false;
+		text =  chatLine.querySelector('.text-fragment').innerHTML;
+		comands = text.match(/!\w+/g);
+		comands.forEach(c => {
+			runComand(c);
+		});
+	} catch (error) {}
 
-console.info('GieremExtencion ');
-if(window.location.href.search("twitch.tv")!=-1){
+}
+function runComand(c) {
+	switch (c) {
+		case '!mojon':
+			m = document.querySelector('#mojon');
+			if(!m){togleMojon();}
+			break;
+		case '!mojoff':
+			m = document.querySelector('#mojon');
+			if(m){m.remove();}
+			break;
+		default:
+			break;
+	}
 }
 
+setInterval(chatListener,100);
 autoRedem();
 togleMojon();
 alexNarcicismo();
