@@ -1,4 +1,3 @@
-
 function autoRedem() {
 	//autoredem
 	setInterval(()=>{
@@ -20,9 +19,20 @@ function togleMojon(){
 	`);
 }
 
+function alexNarcicismo(){
+	s = document.createElement("style");	
+	s.innerHTML = `
+		.chat-line__message[data-a-user="yarockblancomakussj19"] {
+			text-transform: uppercase;
+		}
+	`;
+	document.body.appendChild(s);
+}
+
 console.info('GieremExtencion ');
 if(window.location.href.search("twitch.tv")!=-1){
 }
 
 autoRedem();
 togleMojon();
+alexNarcicismo();
